@@ -1,4 +1,5 @@
 import './App.css'
+import ButtonSocial from './components/ButtonSocial'
 
 const App = () => {
   return (
@@ -12,6 +13,12 @@ const App = () => {
           <h3>BLADEE - 333</h3>
           <h4>CHOOSE MUSIC SERVICE</h4>
         </div>
+        <ButtonSocial label={'spotify'} />
+        <ButtonSocial label={'apple music'} type={'apple'} />
+        <ButtonSocial label={'youtube'} type={'youtube-1'} />
+        <ButtonSocial label={'tidal'} type={'tidal'} />
+        <ButtonSocial label={'soundcloud'} type={'soundcloud-3'} />
+        <ButtonSocial label={'bandcamp'} type={'bandcamp'} />
       </section>
     </div>
   )

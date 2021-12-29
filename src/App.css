@@ -23,6 +23,8 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .album-wrapper .title-wrapper h3 {
