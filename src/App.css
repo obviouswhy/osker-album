@@ -1,3 +1,36 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  min-height: 100vh;
+  width: 100%;
+}
+
+.album-wrapper {
+  max-width: 400px;
+  padding: 0.5rem;
+}
+
+.album-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.album-wrapper .title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.album-wrapper .title-wrapper h3 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.album-wrapper .title-wrapper h4 {
+  font-size: 12px;
+  font-weight: lighter;
 }
