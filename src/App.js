@@ -1,24 +1,24 @@
 import './App.css'
 import ButtonSocial from './components/ButtonSocial'
+import albumData from './albumData.json'
 
 const App = () => {
   return (
     <div className={'App'}>
       <section className={'album-wrapper'}>
-        <img
-          alt={'Album Cover'}
-          src="https://d1iudujjh4zmgc.cloudfront.net/uploads/image/asset/503/medium_af262904-5003-49d4-a1a1-d193c3de4c62.jpg"
-        />
+        <img alt={'Album Cover'} src={albumData.coverImg} />
         <div className={'title-wrapper'}>
-          <h3>BLADEE - 333</h3>
-          <h4>CHOOSE MUSIC SERVICE</h4>
+          <h3>{albumData.title || 'Album Title'}</h3>
+          <h4>{albumData.subtitle || 'Album Subtitle'}</h4>
         </div>
-        <ButtonSocial label={'spotify'} />
-        <ButtonSocial label={'apple music'} type={'apple'} />
-        <ButtonSocial label={'youtube'} type={'youtube-1'} />
-        <ButtonSocial label={'tidal'} type={'tidal'} />
-        <ButtonSocial label={'soundcloud'} type={'soundcloud-3'} />
-        <ButtonSocial label={'bandcamp'} type={'bandcamp'} />
+        {albumData.sns.map((item, index) => (
+          <ButtonSocial
+            key={`${index}_${item.type}`}
+            label={item.label}
+            type={item.type}
+            url={item.url}
+          />
+        ))}
       </section>
     </div>
   )

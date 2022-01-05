@@ -1,9 +1,13 @@
 import './ButtonSocial.css'
 import PropTypes from 'prop-types'
 
-const ButtonSocial = ({ label = 'btn-label', type = 'spotify' }) => {
+const ButtonSocial = ({
+  label = 'spotify',
+  type = 'spotify',
+  url = 'https://oskerwyld.com',
+}) => {
   return (
-    <div className={'btn-wrapper'}>
+    <div onClick={() => window.open(url)} className={'btn-wrapper'}>
       <div className={'btn-content'}>
         <i
           className={`icon-${type}`}
@@ -18,6 +22,7 @@ const ButtonSocial = ({ label = 'btn-label', type = 'spotify' }) => {
 ButtonSocial.propTypes = {
   label: PropTypes.string,
   type: PropTypes.string,
+  url: PropTypes.string,
 }
 
 export default ButtonSocial

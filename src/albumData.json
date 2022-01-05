@@ -1,0 +1,37 @@
+{
+  "title": "OSKER WYLD - I",
+  "subtitle": "CHOOSE MUSIC SERVICE",
+  "coverImg": "https://is3-ssl.mzstatic.com/image/thumb/Music111/v4/fc/9b/ad/fc9bad8a-2613-6fad-7d36-78168ee3110f/artwork.jpg/1000x1000bb-60.jpg",
+  "sns": [
+    {
+      "label": "spotify",
+      "type": "spotify",
+      "url": "https://open.spotify.com/album/5o9iIqSa69TgUXK64obMrb?si=qq8M86uYTmGOOEKCibWeiA"
+    },
+    {
+      "label": "apple music",
+      "type": "apple",
+      "url": "https://music.apple.com/us/album/i/1215871892"
+    },
+    {
+      "label": "youtube",
+      "type": "youtube-1",
+      "url": "https://www.youtube.com/user/tesoone"
+    },
+    {
+      "label": "soundcloud",
+      "type": "soundcloud-3",
+      "url": "https://soundcloud.com/oskerwyld/sets/ithealbum"
+    },
+    {
+      "label": "tidal",
+      "type": "tidal",
+      "url": "https://tidal.com/browse/album/71611302"
+    },
+    {
+      "label": "bandcamp",
+      "type": "bandcamp",
+      "url": "https://oskerwyld.bandcamp.com/album/i"
+    }
+  ]
+}
